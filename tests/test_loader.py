@@ -4,8 +4,9 @@ from collectors.yahoo import download_stock
 from database.connection import get_connection
 from database.loader import load_stock_data
 
-
+@pytest.mark.integration
 def test_yahoo_to_database():
+    
     symbol = "NVDA"
 
     # Get real data from Yahoo Finance

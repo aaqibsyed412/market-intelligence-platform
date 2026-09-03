@@ -17,3 +17,7 @@ dev = [
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
+markers = [
+    "integration: tests that require external services such as PostgreSQL or Yahoo Finance"
+]
+
